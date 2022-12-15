@@ -28,66 +28,9 @@
             </ul> 
         </nav>
     </header>
-    <form action="" id="formulario" method="POST">
-        <h1>Formulario de Registro</h1>
-        <label for="">
-            <input type="text"  name="nombre" id="nombre"><br>
-            Ingresa tu nombre
-        </label> <br>
-        <label for="">
-            <input type="text"  name="apellido" id="apellido"><br>
-            Ingresa tu apellido
-        </label> <br>
-        <label for="">
-            <input type="email"  name="email" id="email"> <br>
-            Ingresa email
-        </label> <br>
-        <label for="">
-            <input type="number"  name="codigo" id="codigo"><br>
-            Ingresa codigo
-        </label><br>
-        <label for=""><input type="radio">Acepto terminos y condiciones!</label>
-        <button onclick="registro()">Registrarme</button>
-    </form>
-    <script>
-       $(document).ready(function(){
-            $("#formulario").validate({
-                rules:{
-                    nombre:{required:true, minlength:4, maxlength:15},
-                    apellido:{required:true, minlength:4, maxlength:15},
-                    email:{requiered:true},
-                    codigo:{required:true, minlength:6, maxlength:6}
-                },
-                messages:{
-                    nombre:{
-                        required:"el campo es obligatorio",
-                        minlength:"la longitud minima es de 3 caracteres",
-                        maxlength:"la longitud maxima es de 15 caracteres"
-                    },
-                    apellido:{
-                        required:'campo obligatorio'
-                    },
-                    email:{
-                        required:'campo obligatorio'
-                    },
-                    codigo:{
-                        required:'campo obligatorio, y debe tener 6 digitos',
-                    }
-                }
-            });
-        });
-    Swal.fire(
-            'Te invitamos a registrarte!',
-            '',
-            ''
-        )
-    function registro(){
-        let nombre=$("#nombre").val();
-        let apellido=$("#apellido").val();
-        let correo=$("#correo").val();
-        let codigo=$("#codigo").val();
-        console.log(nombre,apellido,correo,codigo);
-    }
+    
+   
+  
 
     </script>
     <script src="pagina_principal/JS/jquery-3.6.1.min.js"></script>
